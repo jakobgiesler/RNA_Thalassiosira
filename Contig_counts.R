@@ -1,7 +1,6 @@
 ### RNA Contig presence-absence analysis of 9 T. rotula strains ###
 
 # Housekeeping
-rm(list = ls())
 library(ape)
 library(readr)
 setwd("/Users/jgiesler/Library/Mobile Documents/com~apple~CloudDocs/PhD/R Directory/Transcriptomics/RNA_Thalassiosira/Contig counts")
@@ -24,7 +23,3 @@ mat.df <- nj(dist.gene(df_matrix)) # neighbor joining tree construction
 plot(mat.df, "phylo") # first glimpse but looks ugly
 nodelabels() 
 plot(mat.df,type = "unrooted", cex = 0.4) # remove root structure
-
-
-
-nodelabels() 
